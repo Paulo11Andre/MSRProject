@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
+<robot name="object" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <joint name="object_junta" type="fixed">
+
+        <parent link="end_effect_point"/>
+
+        <child link="object"/>
+
+        <origin xyz="0 0.5 0.148 " rpy="1.57 0 0"/>
+
+    </joint>
+
+    <link name="object">
+
+        <inertial>
+
+            <origin xyz="1.1327E-16 -3.3286E-17 0.66019" rpy="0 0 0" />
+
+            <mass value="11.953" />
+
+            <inertia ixx="7.5972" ixy="-1.394E-14" ixz="1.9328E-17" iyy="0.99673" iyz="-9.2056E-18" izz="8.1168" />
+
+        </inertial>
+
+        <visual>
+
+            <origin xyz="0 0 0" rpy="0 0 0" />
+
+            <geometry>
+
+                <mesh filename="package://kr210_description/supports/sack.stl" scale="0.02 0.02 0.02"/>
+
+            </geometry>
+
+            <material name="white">
+
+                <color rgba="1 1 1 1" />
+
+            </material>
+
+        </visual>
+
+        <collision>
+
+            <!--<origin xyz="0.0 0.0 0" rpy="1.570796327 0.0 1.570796327"/>-->
+
+            <origin xyz="0 0 0" rpy="0 0 0" />
+
+            <geometry>
+
+                <!--<mesh filename="package://demo_world/meshes/conveyor_simple.stl" scale="1 2 1"/>-->
+
+                <mesh filename="package://kr210_description/supports/sack.stl" scale="0.02 0.02 0.02"/>
+
+            </geometry>
+
+        </collision>
+
+    </link>
+    
+
+</robot>

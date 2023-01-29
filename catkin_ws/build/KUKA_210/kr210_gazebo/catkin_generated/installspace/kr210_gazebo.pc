@@ -1,0 +1,8 @@
+prefix=/home/chris/catkin_ws/install
+
+Name: kr210_gazebo
+Description: Description of kr210_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

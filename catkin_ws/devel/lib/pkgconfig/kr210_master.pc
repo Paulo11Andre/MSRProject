@@ -1,0 +1,8 @@
+prefix=/home/chris/catkin_ws/devel
+
+Name: kr210_master
+Description: Description of kr210_master
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
